@@ -38,16 +38,18 @@ body {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div class="container-fluid p-3 my-3 bg-dark text-danger">
-<h1>Audi  <span class="badge badge-danger text-light">A3</span></h1>
+<h1>Audi  <span class="badge badge-danger text-light">A4</span></h1>
 
 <div class="btn-group-sm btn">
-  <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Switch to A1">Audi A1</button>
-  <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Switch to A2">Audi A2</button>
-  <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Switch to A4">Audi A4</button>
-  <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Switch to A5">Audi A5</button>
-  <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Switch to A6">Audi A6</button>
-  <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Switch to A7">Audi A7</button>
-  <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Switch to A8">Audi A8</button>
+
+
+  <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Switch to A2"><a href="{% url 'a1' %}">Audi A1<a/></button>
+  <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Switch to A3"><a href="{% url 'a2' %}">Audi A2<a/></button>
+  <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Switch to A4"><a href="{% url 'a3' %}">Audi A3<a/></button>
+  <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Switch to A5"><a href="{% url 'a5' %}">Audi A5<a/></button>
+  <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Switch to A6"><a href="{% url 'a6' %}">Audi A6<a/></button>
+  <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Switch to A7"><a href="{% url 'a7' %}">Audi A7<a/></button>
+  <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Switch to A8"><a href="{% url 'a8' %}">Audi A8<a/></button>
 </div>
 
 </div>
@@ -55,7 +57,7 @@ body {
 
 
 <div class="container">
-  <table class="table table-dark table-striped text-success">
+  <table class="table table-dark table-striped text-success">|
     <thead>
       <tr>
         <th class="badge-dark text-success">Model</th>
@@ -65,20 +67,25 @@ body {
     </thead>
     <tbody>
       <tr>
-        <td>Audi A3 8L</td>
-        <td>1996-2003</td>
-        <td><a href="https://en.wikipedia.org/wiki/Audi_A3#First_generation_(Typ_8L;_1996%E2%80%932003)" data-toggle="tooltip" data-placement="top" title="Click here for more details">Link</a></td>
+        <td>Audi A4 B5</td>
+        <td>1994–2001</td>
+        <td><a href="https://en.wikipedia.org/wiki/Audi_A4#B5_(Typ_8D;_1994%E2%80%932001)" data-toggle="tooltip" data-placement="top" title="Click here for more details">Link</a></td>
       </tr>
       <tr>
-        <td>Audi A3 8P</td>
-        <td>2003-2013</td>
-        <td><a href="https://en.wikipedia.org/wiki/Audi_A3#Second_generation_(Typ_8P;_2003%E2%80%932013)" data-toggle="tooltip" data-placement="top" title="Click here for more details">Link</a></td>
-      </tr>
-      <tr>
-        <td>Audi A3 8V</td>
-        <td>2012-2020</td>
-        <td><a href="https://en.wikipedia.org/wiki/Audi_A3#Third_generation_(Typ_8V;_2012%E2%80%932020)" data-toggle="tooltip" data-placement="top" title="Click here for more details">Link</a></td>
-      </tr>
+      <td>Audi A4 B6</td>
+      <td>2001–2006</td>
+      <td><a href="https://en.wikipedia.org/wiki/Audi_A4#B6_(Typ_8E/8H;_2001%E2%80%932006)" data-toggle="tooltip" data-placement="top" title="Click here for more details">Link</a></td>
+    </tr>
+    <tr>
+      <td>Audi A4 B7</td>
+      <td>2004–2009</td>
+      <td><a href="https://en.wikipedia.org/wiki/Audi_A4#B7_(Typ_8E/8H;_2004%E2%80%932009)" data-toggle="tooltip" data-placement="top" title="Click here for more details">Link</a></td>
+    </tr>
+    <tr>
+      <td>Audi A4 B8</td>
+      <td>2008–2016</td>
+      <td><a href="https://en.wikipedia.org/wiki/Audi_A4#B7_(Typ_8E/8H;_2004%E2%80%932009)" data-toggle="tooltip" data-placement="top" title="Click here for more details">Link</a></td>
+    </tr>
     </tbody>
   </table>
 </div>
@@ -86,9 +93,8 @@ body {
 <div class="jumbotron p-3 my-3 bg-dark text-light">
 
 
-  <h1><span class="text-light">Audi A3...</span></h1>
-  <p>The Audi A3 is a small family or subcompact executive car manufactured and marketed since the 1990s[1][2] by the Audi subdivision of the Volkswagen Group, now in its 3rd generation.
-  The first two generations of the Audi A3 were based on the Volkswagen Group A platform, which they share with the Audi TT, Volkswagen Golf, Volkswagen Caddy, and Volkswagen Touran, as well as SEAT León, SEAT Toledo, and Škoda Octavia.</p>
+  <h1><span class="text-light">Audi A4...</span></h1>
+  <p>The Audi A4 is a line of compact executive cars produced since 1994 by the German car manufacturer Audi, a subsidiary of the Volkswagen Group.</p>
 </div>
 
 <meta charset="utf-8">
@@ -120,17 +126,18 @@ body {
     <li data-target="#demo" data-slide-to="2"></li>
   </ul>
   
+  
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Audi_S3_2002_Imola_Yellow.jpg" alt="Los Angeles" width="1000" height="500">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Yellow_Audi_S4_B5.jpg/800px-Yellow_Audi_S4_B5.jpg" width="1000" height="500">
     </div>
-    <div class="carousel-item">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Audi_RS3_Sportback_Daytonagrau.JPG/800px-Audi_RS3_Sportback_Daytonagrau.JPG" alt="Chicago" width="1000" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Audi_S3_Sportback_%288V%29_%E2%80%93_Frontansicht%2C_6._M%C3%A4rz_2016%2C_D%C3%BCsseldorf.jpg/800px-Audi_S3_Sportback_%288V%29_%E2%80%93_Frontansicht%2C_6._M%C3%A4rz_2016%2C_D%C3%BCsseldorf.jpg" alt="New York" width="1000" height="500">
-    </div>
+  <div class="carousel-item">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Audi_RS4_B5.jpg/800px-Audi_RS4_B5.jpg" width="1000" height="500">
+  </div>
+  <div class="carousel-item">
+    <img src="https://i.pinimg.com/564x/37/68/05/37680561894343a9a97a5ac627d44125.jpg" width="1000" height="500">
+  </div>
   </div>
   
   <!-- Left and right controls -->
@@ -154,11 +161,6 @@ body {
 
 </div>
 
-
-
-<!-- <div class="container mt-3 bg-dark text-light">
-    <img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/52422178_2308917072494247_2308966146222587904_n.jpg?_nc_cat=110&_nc_sid=7aed08&_nc_ohc=-g1Fe0BhT-4AX8-y8Db&_nc_ht=scontent-vie1-1.xx&oh=752bd6a72411e5c8725412c6a3da1fac&oe=5EA7C142" class="mr-3 mt-3 rounded-circle" style="width:60px;"><h4 href="https://www.facebook.com/deki90to">Dejan Jovanovic</h4>   
-</div> -->
 
 
 
